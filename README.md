@@ -13,7 +13,7 @@ Este es un miniproyecto para la materia de FPOE desarrollado en JavaFX utilizand
 ## Clonar el repositorio
 Para obtener una copia local del repositorio, abre una terminal en la carpeta donde quieres guardarlo y escribe el siguiente comando:
 
-`git clone https://github.com/kamilo0210/sudoku-game.git`
+`git clone https://github.com/kamilo0210/sudokuGame.git`
 ## Crear una nueva rama
 Es recomendable trabajar en una rama separada para nuevas funcionalidades o modificaciones. Crea y cambia a una nueva rama:
 
