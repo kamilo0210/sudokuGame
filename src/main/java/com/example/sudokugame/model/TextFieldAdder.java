@@ -16,8 +16,8 @@ public class TextFieldAdder {
         this.id=id;
         textField = new TextField();
         textField.setEditable(false);
-        textField.setMaxWidth(37);
-        textField.setMaxHeight(37);
+        textField.setMaxWidth(50);
+        textField.setMaxHeight(50);
         textField.setAlignment(Pos.CENTER);
         textField.setStyle("-fx-background-color: #ffffff;");
         textField.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.DOTTED, CornerRadii.EMPTY, new BorderWidths(1))));
