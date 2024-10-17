@@ -5,6 +5,5 @@ module com.example.sudokugame {
 
     opens com.example.sudokugame to javafx.fxml;
     exports com.example.sudokugame;
-    exports com.example.sudokugame.controller;
     opens com.example.sudokugame.controller to javafx.fxml;
 }
