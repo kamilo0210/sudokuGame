@@ -25,8 +25,14 @@ public class Board {
                 {6, 4, 5, 2, 3, 1}
         };
 
-
-        // Puedes añadir más sudokus completos de 6x6 siguiendo este formato...
+        int[][] sudokuComplete2 = {
+                {1, 4, 5, 6, 2, 3},
+                {3, 6, 2, 5, 4, 1},
+                {2, 3, 6, 1, 5, 4},
+                {5, 1, 4, 3, 6, 2},
+                {6, 2, 1, 4, 3, 5},
+                {4, 5, 3, 2, 1, 6}
+        };
 
 
         // Sudokus incompletos (con dos números por celda)
@@ -39,17 +45,28 @@ public class Board {
                 {0, 0, 0, 0, 3, 0}
         };
 
+        int[][] sudokuIncomplete2 = {
+                {0, 0, 5, 0, 2, 0},
+                {3, 0, 0, 0, 0, 1},
+                {0, 3, 0, 1, 0, 0},
+                {5, 0, 0, 0, 6, 0},
+                {6, 0, 0, 0, 3, 0},
+                {4, 0, 0, 0, 0, 6}
+        };
+
+
 
 
         // Listas de sudokus completos e incompletos
         ArrayList<int[][]> incompleteSudokus = new ArrayList<>();
         incompleteSudokus.add(sudokuIncomplete1);
+        incompleteSudokus.add(sudokuIncomplete2);
 
-        // Añadir más sudokus incompletos si se crean...
 
 
         ArrayList<int[][]> completeSudokus = new ArrayList<>();
         completeSudokus.add(sudokuComplete1);
+        completeSudokus.add(sudokuComplete2);
 
 
         // Selección aleatoria de un sudoku
