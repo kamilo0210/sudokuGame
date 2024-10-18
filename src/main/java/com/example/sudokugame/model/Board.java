@@ -55,8 +55,6 @@ public class Board {
         };
 
 
-
-
         // Listas de sudokus completos e incompletos
         ArrayList<int[][]> incompleteSudokus = new ArrayList<>();
         incompleteSudokus.add(sudokuIncomplete1);
@@ -75,5 +73,24 @@ public class Board {
         boardSolution = completeSudokus.get(randomSudoku);
     }
 
+
+    public int[][] getBoardSolution() {
+        return boardSolution;
+    }
+
+
+    public int[][] getBoardIncomplete() {
+        return boardIncomplete;
+    }
+
+
+    public void setBoardIncomplete(int[][] boardIncomplete) {
+        this.boardIncomplete = boardIncomplete;
+    }
+
+
+    public void setBoardSolution(int[][] boardSolution) {
+        this.boardSolution = boardSolution;
+    }
 
 }
