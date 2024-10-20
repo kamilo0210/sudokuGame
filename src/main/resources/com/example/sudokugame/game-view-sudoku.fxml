@@ -24,7 +24,7 @@
    <children>
       <HBox alignment="CENTER" prefHeight="99.0" prefWidth="826.0" style="-fx-background-color: #2471a3;" GridPane.columnSpan="2">
          <children>
-            <Label prefHeight="51.0" prefWidth="191.0" text="SUDOKU GAME" textFill="WHITE">
+            <Label prefHeight="50.0" prefWidth="242.0" text="SUDOKU GAME 6x6" textFill="WHITE">
                <font>
                   <Font name="Roboto Black" size="26.0" />
                </font>
@@ -41,16 +41,8 @@
       </HBox>
       <AnchorPane prefHeight="435.0" prefWidth="593.0" style="-fx-background-color: D8DCFF;" GridPane.columnSpan="2" GridPane.rowIndex="1">
          <children>
-            <Pane layoutX="116.0" layoutY="26.0" prefHeight="330.0" prefWidth="329.0" style="-fx-background-color: white;" />
-            <Button fx:id="btnOne" alignment="CENTER" layoutX="82.0" layoutY="381.0" maxHeight="59.0" maxWidth="39.0" minHeight="44.0" minWidth="39.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="39.0" style="-fx-background-color: #aed581; -fx-border-radius: 50; -fx-border-color: black; -fx-background-radius: 50;" text="1">
-               <font>
-                  <Font name="Roboto Black" size="18.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <GridPane fx:id="gridPaneSudoku" alignment="CENTER" layoutX="116.0" layoutY="25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="329.0" prefWidth="329.0">
+            <Pane layoutX="109.0" layoutY="46.0" prefHeight="330.0" prefWidth="329.0" style="-fx-background-color: white;" />
+            <GridPane fx:id="gridPaneSudoku" alignment="CENTER" layoutX="109.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="329.0" prefWidth="329.0">
               <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="20.0" prefWidth="20.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="20.0" prefWidth="20.0" />
@@ -68,55 +60,23 @@
                   <RowConstraints minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
               </rowConstraints>
             </GridPane>
-            <Button fx:id="btnTwo" alignment="CENTER" layoutX="134.0" layoutY="381.0" maxHeight="59.0" maxWidth="39.0" minHeight="44.0" minWidth="39.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="39.0" style="-fx-background-color: #aed581; -fx-border-radius: 50; -fx-border-color: black; -fx-background-radius: 50;" text="2">
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="405.0" mnemonicParsing="false" onAction="#onHandleButtonRestartGame" prefHeight="50.0" prefWidth="129.0" style="-fx-background-color: #138d75; -fx-background-radius: 30; -fx-border-radius: 30;" text="Nuevo Juego" textFill="WHITE">
                <font>
-                  <Font name="Roboto Black" size="18.0" />
+                  <Font name="Roboto Black Italic" size="16.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="btnThree" alignment="CENTER" layoutX="184.0" layoutY="381.0" maxHeight="59.0" maxWidth="39.0" minHeight="44.0" minWidth="39.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="39.0" style="-fx-background-color: #aed581; -fx-border-radius: 50; -fx-border-color: black; -fx-background-radius: 50;" text="3">
+            <Button fx:id="btnHelp" alignment="CENTER" layoutX="206.0" layoutY="405.0" maxHeight="50.0" maxWidth="100.0" minHeight="28.0" minWidth="75.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #2471a3; -fx-border-radius: 30; -fx-background-radius: 30;" text="Ayuda" textAlignment="CENTER" textFill="#fcfcfc">
                <font>
-                  <Font name="Roboto Black" size="18.0" />
+                  <Font name="Roboto Black" size="17.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="btnFour" alignment="CENTER" layoutX="82.0" layoutY="431.0" maxHeight="59.0" maxWidth="39.0" minHeight="44.0" minWidth="39.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="39.0" style="-fx-background-color: #aed581; -fx-border-radius: 50; -fx-border-color: black; -fx-background-radius: 50;" text="4">
-               <font>
-                  <Font name="Roboto Black" size="18.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="btnFive" alignment="CENTER" layoutX="133.0" layoutY="431.0" maxHeight="59.0" maxWidth="39.0" minHeight="44.0" minWidth="39.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="39.0" style="-fx-background-color: #aed581; -fx-border-radius: 50; -fx-border-color: black; -fx-background-radius: 50;" text="5">
-               <font>
-                  <Font name="Roboto Black" size="18.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="btnSix" alignment="CENTER" layoutX="184.0" layoutY="431.0" maxHeight="59.0" maxWidth="39.0" minHeight="44.0" minWidth="39.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="39.0" style="-fx-background-color: #aed581; -fx-border-radius: 50; -fx-border-color: black; -fx-background-radius: 50;" text="6">
-               <font>
-                  <Font name="Roboto Black" size="18.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="354.0" layoutY="387.0" mnemonicParsing="false" onAction="#onHandleButtonRestartGame" prefHeight="77.0" prefWidth="147.0" style="-fx-background-color: #138d75; -fx-background-radius: 30; -fx-border-radius: 30;" text="NUEVO JUEGO" textFill="WHITE">
-               <font>
-                  <Font name="Roboto Black Italic" size="15.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button fx:id="btnHelp" alignment="CENTER" layoutX="241.0" layoutY="431.0" maxHeight="44.0" maxWidth="99.0" minHeight="28.0" minWidth="75.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="81.0" style="-fx-background-color: #2471a3; -fx-border-radius: 30; -fx-background-radius: 30;" text="Ayuda" textAlignment="CENTER" textFill="#fcfcfc">
+            <Button fx:id="btnDelete" alignment="CENTER" layoutX="95.0" layoutY="405.0" maxHeight="59.0" maxWidth="100.0" minHeight="44.0" minWidth="39.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: b92929; -fx-border-radius: 30; -fx-background-radius: 30;" textFill="WHITE">
                <font>
                   <Font name="Roboto Black" size="15.0" />
                </font>
@@ -124,21 +84,18 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="btnDelete" alignment="CENTER" layoutX="241.0" layoutY="379.0" maxHeight="59.0" maxWidth="85.0" minHeight="44.0" minWidth="39.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="81.0" style="-fx-background-color: b92929; -fx-border-radius: 30; -fx-background-radius: 30;" text="Borrar" textFill="WHITE">
+            <Line endX="231.0" layoutX="207.0" layoutY="157.0" startX="-98.0" strokeWidth="2.0" />
+            <Line endX="231.0" layoutX="207.0" layoutY="267.0" startX="-98.0" strokeWidth="2.0" />
+            <Line endX="-46.5" endY="328.0" layoutX="320.0" layoutY="46.0" startX="-46.5" startY="-1.0" strokeWidth="2.0" />
+            <Line endX="-46.5" endY="328.0" layoutX="485.0" layoutY="48.0" startX="-46.5" startY="-1.0" strokeWidth="3.0" />
+            <Line endX="-46.5" endY="328.0" layoutX="155.0" layoutY="48.0" startX="-46.5" startY="-1.0" strokeWidth="3.0" />
+            <Line endX="231.0" layoutX="207.0" layoutY="45.0" startX="-98.0" strokeWidth="3.0" />
+            <Line endX="231.0" layoutX="207.0" layoutY="376.0" startX="-98.0" strokeWidth="3.0" />
+            <Label layoutX="121.0" layoutY="420.0" text="Borrar" textFill="WHITE">
                <font>
-                  <Font name="Roboto Black" size="15.0" />
+                  <Font name="Roboto Black" size="17.0" />
                </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Line endX="231.0" layoutX="214.0" layoutY="137.0" startX="-98.0" strokeWidth="2.0" />
-            <Line endX="231.0" layoutX="214.0" layoutY="247.0" startX="-98.0" strokeWidth="2.0" />
-            <Line endX="-46.5" endY="328.0" layoutX="327.0" layoutY="26.0" startX="-46.5" startY="-1.0" strokeWidth="2.0" />
-            <Line endX="-46.5" endY="328.0" layoutX="492.0" layoutY="28.0" startX="-46.5" startY="-1.0" strokeWidth="3.0" />
-            <Line endX="-46.5" endY="328.0" layoutX="162.0" layoutY="28.0" startX="-46.5" startY="-1.0" strokeWidth="3.0" />
-            <Line endX="231.0" layoutX="214.0" layoutY="25.0" startX="-98.0" strokeWidth="3.0" />
-            <Line endX="231.0" layoutX="214.0" layoutY="358.0" startX="-98.0" strokeWidth="3.0" />
+            </Label>
          </children>
       </AnchorPane>
    </children>
