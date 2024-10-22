@@ -95,7 +95,6 @@ public class GameController {
                             textField.setStyle("-fx-background-color: red;");
                             AlertBox alertBox = new AlertBox();
                             alertBox.showMessage("Error", "Número incorrecto", "El número ingresado no es correcto.");
-                            textField.setText(" ");
                         }
                     } else {
                         textField.setText(" ");
