@@ -113,7 +113,8 @@ public class GameController {
                 }
 
 
-                gridPaneSudoku.add(textField, j, i); // Colocar en la posición correcta (columna, fila)
+                // Colocar en la posición correcta (columna, fila)
+                gridPaneSudoku.add(textField, j, i);
             }
         }
 
@@ -151,7 +152,7 @@ public class GameController {
 
             int correctValue = boardComplete[row][col];
             chosenField.setText(String.valueOf(correctValue));
-            chosenField.setStyle("-fx-background-color: #eaeaea;");
+            chosenField.setStyle("-fx-background-color: #d2f1f5;");
             copyBoardIncomplete[row][col] = correctValue;
 
 
