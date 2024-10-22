@@ -25,12 +25,5 @@ public class TextFieldAdder {
     public TextField getTextField() {return textField;}
 
 
-    public void setTextField(TextField textField) {this.textField = textField;}
-
-
-    public String getId() {return id;}
-    public void setId(String id) {this.id = id;}
-
-
 }
 

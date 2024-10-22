@@ -39,7 +39,7 @@ public class GameController {
 
     @FXML
     public void initialize() {
-        // Crear la instancia de Board que genera aleatoriamente un Sudoku
+
         board = new Board();
 
         btnHelp.setText("Ayuda (" + (MAX_HELP - helpCount) + ")");
@@ -48,19 +48,14 @@ public class GameController {
             activeButton = btnDelete;
         });
 
-
-        // Obtener los tableros incompleto y completo desde la instancia de Board
         int[][] boardIncomplete = board.getBoardIncomplete();
         int[][] copyBoardIncomplete = new int[6][6];
 
 
-        // Copiar el tablero incompleto
         for (int i = 0; i < 6; i++) {
             System.arraycopy(boardIncomplete[i], 0, copyBoardIncomplete[i], 0, 6);
         }
 
-
-        // Llenar el GridPane con los valores del tablero incompleto
         for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 6; j++) {
                 String id = String.valueOf(i).concat(String.valueOf(j));
@@ -105,7 +100,6 @@ public class GameController {
                 });
 
 
-                // Configurar los TextFields en base al valor del tablero incompleto
                 if (copyBoardIncomplete[i][j] == 0) {
                     textField.setText(" ");
                 } else {
@@ -114,7 +108,6 @@ public class GameController {
                 }
 
 
-                // Colocar en la posición correcta (columna, fila)
                 gridPaneSudoku.add(textField, j, i);
             }
         }
@@ -165,7 +158,6 @@ public class GameController {
 
     @FXML
     void onHandleButtonRestartGame(ActionEvent event) {
-        // Reiniciar el juego creando una nueva instancia de Board
         board = new Board();
         activeButton = null;
         helpCount = 0;
