@@ -42,6 +42,7 @@ public class GameController {
         // Crear la instancia de Board que genera aleatoriamente un Sudoku
         board = new Board();
 
+        btnHelp.setText("Ayuda (" + (MAX_HELP - helpCount) + ")");
 
         btnDelete.setOnAction(event -> {
             activeButton = btnDelete;
@@ -157,6 +158,7 @@ public class GameController {
 
 
             helpCount++;
+            btnHelp.setText("Ayuda (" + (MAX_HELP - helpCount) + ")");
         }
     }
 
@@ -169,6 +171,7 @@ public class GameController {
         helpCount = 0;
         gridPaneSudoku.getChildren().clear();
         initialize();
+        btnHelp.setText("Ayuda (" + (MAX_HELP - helpCount) + ")");
     }
 
 
