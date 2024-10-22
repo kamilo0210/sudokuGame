@@ -75,6 +75,7 @@ public class GameController {
                     }
                     if (activeButton != null && activeButton.equals(btnDelete)) {
                         textField.setText(" ");
+                        textField.setStyle("-fx-background-color: white;");
                     }
                 });
 
