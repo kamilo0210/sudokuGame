@@ -18,19 +18,10 @@ public class AlertBox implements IAlertBox {
      */
     @Override
     public void showMessage(String title, String header, String content) {
-        // Create an informational alert.
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-
-        // Set the title of the alert dialog window.
         alert.setTitle(title);
-
-        // Set the header text of the alert dialog.
         alert.setHeaderText(header);
-
-        // Set the content or the main message of the alert.
         alert.setContentText(content);
-
-        // Display the alert and wait for user interaction before proceeding.
         alert.showAndWait();
     }
 }

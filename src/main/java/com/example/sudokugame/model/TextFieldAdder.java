@@ -13,8 +13,8 @@ import javafx.scene.paint.Color;
  */
 public class TextFieldAdder {
 
-    private String id;              // Unique identifier for the TextField, corresponding to its position in the grid.
-    private TextField textField;    // The TextField component that is configured for the Sudoku game.
+    private String id;
+    private TextField textField;
 
     /**
      * Constructs a TextFieldAdder with a specific ID.
@@ -26,11 +26,11 @@ public class TextFieldAdder {
     public TextFieldAdder(String id) {
         this.id = id;
         textField = new TextField();
-        textField.setEditable(false);                       // Set the text field to non-editable by default.
-        textField.setMaxWidth(60);                         // Set maximum width to 60 pixels.
-        textField.setMaxHeight(60);                        // Set maximum height to 60 pixels.
-        textField.setAlignment(Pos.CENTER);                // Center the text within the text field.
-        textField.setStyle("-fx-background-color: #ffffff;"); // Set the background color to white.
+        textField.setEditable(false);
+        textField.setMaxWidth(60);
+        textField.setMaxHeight(60);
+        textField.setAlignment(Pos.CENTER);
+        textField.setStyle("-fx-background-color: #ffffff;");
         textField.setBorder(new Border(new BorderStroke(Color.BLACK, BorderStrokeStyle.DOTTED, CornerRadii.EMPTY, new BorderWidths(1))));  // Apply a dotted border.
     }
 

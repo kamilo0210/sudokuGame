@@ -22,26 +22,13 @@ public class GameStage extends Stage {
      * @throws IOException if the FXML file for the game layout cannot be loaded.
      */
     public GameStage() throws IOException {
-        // Load the FXML file for the Sudoku game view.
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/sudokugame/game-view-sudoku.fxml"));
         Parent root = loader.load();
-
-        // Create a new scene with the loaded layout.
         Scene scene = new Scene(root);
-
-        // Set the title of the window (stage).
         setTitle("Sudoku 6x6");
-
-        // Set the window icon.
         getIcons().add(new Image(String.valueOf(getClass().getResource("/com/example/sudokugame/images/favicon.png"))));
-
-        // Disable window resizing.
         setResizable(false);
-
-        // Set the scene for this stage.
         setScene(scene);
-
-        // Show the stage.
         show();
     }
 
@@ -61,7 +48,7 @@ public class GameStage extends Stage {
      * This is part of the Singleton pattern implementation to lazily load the instance.
      */
     private static class GameStageHolder {
-        private static GameStage INSTANCE;  // The singleton instance of GameStage.
+        private static GameStage INSTANCE;
     }
 
     /**
@@ -71,8 +58,8 @@ public class GameStage extends Stage {
      */
     public static void deleteInstance() {
         if (GameStageHolder.INSTANCE != null) {
-            GameStageHolder.INSTANCE.close();   // Close the current game stage.
-            GameStageHolder.INSTANCE = null;    // Dereference the instance, allowing it to be recreated.
+            GameStageHolder.INSTANCE.close();
+            GameStageHolder.INSTANCE = null;
         }
     }
 }

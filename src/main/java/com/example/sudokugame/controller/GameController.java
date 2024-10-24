@@ -21,19 +21,18 @@ import java.util.Random;
 public class GameController {
 
     @FXML
-    private Button btnDelete; // Button to delete the value from a selected cell
+    private Button btnDelete;
 
     @FXML
-    private Button btnHelp; // Button to provide hints during gameplay
-
+    private Button btnHelp;
     @FXML
-    private GridPane gridPaneSudoku; // GridPane where the Sudoku board is displayed
+    private GridPane gridPaneSudoku;
 
-    private Board board; // Sudoku board logic
+    private Board board;
     private int helpCount = 0; // Counter to track the number of help requests
     private static final int MAX_HELP = 5; // Maximum number of help attempts allowed
 
-    private Button activeButton = null; // Tracks the currently active button (e.g., delete)
+    private Button activeButton = null;
 
     /**
      * Initializes the game board and user interface. Sets up event handlers for buttons
