@@ -123,6 +123,7 @@ public class Board {
         incompleteSudokus.add(sudokuIncomplete4);
         incompleteSudokus.add(sudokuIncomplete5);
 
+
         ArrayList<int[][]> completeSudokus = new ArrayList<>();
         completeSudokus.add(sudokuComplete1);
         completeSudokus.add(sudokuComplete2);
